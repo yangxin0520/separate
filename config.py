@@ -1,6 +1,5 @@
 import os
 import redis
-from flask_session import Session
 
 
 SECRET_KEY = os.urandom(24)

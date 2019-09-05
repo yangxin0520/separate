@@ -3,8 +3,7 @@ from config import config_map
 from flask_sqlalchemy import SQLAlchemy
 from flask_session import Session
 from flask_wtf import CSRFProtect
-# 使用绝对路径注册api_1_0蓝图
-from gather import api_1_0
+from gather.utils.commons import ReConverter
 
 import redis
 
@@ -37,13 +36,22 @@ def create_app(config_name):
     global redis_store
     redis_store = redis.StrictRedis(host=config_class.REDIS_HOST, port=config_class.REDIS_PORT)
 
-    # 利用flask-session，将session保存到redis中
-    Session(app)
+    # # 利用flask-session，将session保存到redis中
+    # Session(app)
 
     # 为flask添加csrf防护
     CSRFProtect(app)
 
+    # 为flask添加自定义的转换器
+    app.url_map.converters["re"] = ReConverter
+
     # 注册蓝图
+    # 使用绝对路径注册api_1_0蓝图
+    from gather import api_1_0
     app.register_blueprint(api_1_0.api, url_prefix="/api/V1.0")
+
+    # 注册静态文件的蓝图
+    from gather.web_html import html
+    app.register_blueprint(html)
 
     return app
