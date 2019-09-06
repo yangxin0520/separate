@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="user">
+        <button id="login_js">submit</button>
+
+
+    </div>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+        $(function(){
+            $("#login_js").on('click', function () {
+            $.ajax({
+                url:"/test_post.html",
+                dataType:"json",
+                async:true,
+                data:{
+                    "user": $('#user').val()
+                },
+                type:"post",
+                beforeSend:function(){
+                },
+                success:function(data){alert(data)},
+                complete:function(){
+                },
+                error:function(){
+                    alert('出错了')
+                }
+            });
+        })
+        })
+    </script>
+</body>
+</html>

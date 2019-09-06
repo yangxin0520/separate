@@ -17,4 +17,5 @@ def get_html_fc(html_file_name):
         html_file_name = "html/" + html_file_name
 
     # flask提供的返回静态文件的方法
+    print(current_app.send_static_file(html_file_name))
     return current_app.send_static_file(html_file_name)

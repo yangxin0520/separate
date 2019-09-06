@@ -1,0 +1,180 @@
+<!doctype html>
+<html  lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
+
+    <!-- title of site -->
+    <title>登陆</title>
+
+    <!-- For favicon png -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/5.10.0-12/css/fontawesome.min.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/animate.css/3.7.2/animate.css">
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link rel="stylesheet" href="static/css/login_register/bootsnav.css" >
+
+    <!--style.css-->
+    <link rel="stylesheet" href="static/css/login_register/login_register.css">
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="static/css/login_register/responsive.css">
+    <!--跳转动画-->
+    <link rel="stylesheet" type="text/css" href="static/css/login_register/dialog.css">
+
+</head>
+
+	<body>
+
+		<!-- signin end -->
+		<section class="signin popup-in">
+			<div class="container">
+
+				<div class="sign-content popup-in-content">
+					<div class="popup-in-txt">
+						<h2>登陆</h2>
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="signin-form">
+									<form>
+										<div class="form-group">
+										    <label for="signin_form">用户名</label>
+										    <input type="email" class="form-control" id="username" placeholder="请输入用户名">
+										</div><!--/.form-group -->
+										<div class="form-group">
+											<label for="signin_form">密码</label>
+										    <input type="password" class="form-control" id="password" placeholder="请输入密码">
+										</div><!--/.form-group -->
+									</form><!--/form -->
+								</div><!--/.signin-form -->
+							</div><!--/.col -->
+						</div><!--/.row -->
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="signin-password">
+									<div class="awesome-checkbox-list">
+										<ul class="unstyled centered">
+
+											<li>
+											    <input class="styled-checkbox" id="styled-checkbox-2" type="checkbox" value="value2">
+											    <label for="styled-checkbox-2">记住密码</label>
+											</li>
+
+											<li>
+											    <a href="#">忘记用户名或者密码?</a>
+											</li>
+
+										</ul>
+									</div><!--/.awesome-checkbox-list -->
+								</div><!--/.signin-password -->
+							</div><!--/.col -->
+						</div><!--/.row -->
+
+						<div class="row">
+							<div class="col-sm-12">
+								<div class="signin-footer">
+                                    <input type="submit" class="btn signin_btn" value="登陆" id="login_js">
+									<p>
+										还没有账号?
+										<a href="#">点我注册</a>
+									</p>
+								</div><!--/.signin-footer -->
+							</div><!--/.col-->
+						</div><!--/.row -->
+					</div><!-- .popup-in-txt -->
+				</div><!--/.sign-content -->
+			</div><!--/.container -->
+
+		</section><!--/.signin -->
+
+		<!-- signin end -->
+
+		<!--footer copyright start -->
+		<footer class="footer-copyright">
+			<div id="scroll-Top">
+				<i class="fa fa-angle-double-up return-to-top" id="scroll-top" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+			</div><!--/.scroll-Top-->
+
+		</footer><!--/.hm-footer-copyright-->
+		<!--footer copyright  end -->
+
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+
+<!--modernizr.min.js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+<!--bootstrap.min.js-->
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- bootsnav js -->
+<script src="static/js/login_register/bootsnav.js"></script>
+
+<!-- jquery.sticky.js -->
+<script src="https://cdn.bootcss.com/jquery.sticky/1.0.4/jquery.sticky.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<!--跳转动画-->
+<script type="text/javascript" src="static/js/login_register/zepto.min.js"></script>
+<script type="text/javascript" src="static/js/login_register/dialog.min.js"></script>
+
+
+<!--Custom JS-->
+<script src="static/js/login_register/custom.js"></script>
+
+<script>
+    $(function () {
+        $("#login_js").on('click', function () {
+            $.ajax({
+                url:"/login",
+                dataType:"json",
+                async:true,
+                data:{
+                    "username": $('#username').val(),
+                    "password": $('#password').val()
+                },
+                type:"post",
+                beforeSend:function(){
+                },
+                success:function(data){
+                    if (data.status===1){
+                        alert("11111")
+                        popup({type:'load',msg:"验证登陆中",delay:1000,callBack:function(){
+	                        popup({type:"success",msg:"登陆成功 正在跳转",delay:1500,callBack:function () {
+                                    window.location.href='index.html'
+                                }});
+                        }});
+
+                    }else if (data.status===0){
+                        alert("0000")
+                        popup({type:'load',msg:"验证登陆中",delay:1000,callBack:function(){
+	                        popup({type:'error',msg:"请检查账号密码",delay:2000,bg:true,clickDomCancel:true});
+                        }});
+                    }
+                },
+                complete:function(){
+                },
+                error:function(){
+                    alert('出错了')
+                }
+            });
+        })
+    })
+</script>
+    </body>
+
+</html>
