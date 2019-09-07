@@ -2,14 +2,18 @@ from flask import Flask
 from config import config_map
 from flask_sqlalchemy import SQLAlchemy
 from flask_session import Session
-from flask_wtf import CSRFProtect
+# from flask_wtf import CSRFProtect
 from gather.utils.commons import ReConverter
 from gather.utils.exts import db
+
+
 from gather.utils.models import Users
-# import redis
+import redis
 
 
-# 创建redis连接对象,暂时用不到
+
+
+# 创建redis连接对象
 redis_store = None
 
 
@@ -22,12 +26,12 @@ def create_app(config_name):
     """
 
     app = Flask(__name__)
-    from os import urandom
-    app.config['SECRET_KEY'] = urandom(50)
 
     # 根据配置模式的名字获取配置参数的类
     config_class = config_map.get(config_name)
     app.config.from_object(config_class)
+    app.config["SECRET_KEY"] = "12345wdwaw"
+
 
     # 使用app初始化db
     db.init_app(app)
@@ -40,7 +44,7 @@ def create_app(config_name):
     # # 利用flask-session，将session保存到redis中
     # Session(app)
 
-    # 为flask添加csrf防护
+    # # 为flask添加csrf防护
     # CSRFProtect(app)
 
     # 为flask添加自定义的转换器
@@ -49,8 +53,7 @@ def create_app(config_name):
     # 注册蓝图
     # 使用绝对路径注册api_1_0蓝图
     from gather import api_1_0
-    # app.register_blueprint(api_1_0.api, url_prefix="/api/V1.0")
-    app.register_blueprint(api_1_0.api)
+    app.register_blueprint(api_1_0.api, url_prefix="/api/V1.0")
 
     # 注册静态文件的蓝图
     from gather.web_html import html

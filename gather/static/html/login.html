@@ -140,7 +140,7 @@
     $(function () {
         $("#login_js").on('click', function () {
             $.ajax({
-                url:"/login",
+                url:"/api/V1.0/users",
                 dataType:"json",
                 async:true,
                 data:{
@@ -152,7 +152,6 @@
                 },
                 success:function(data){
                     if (data.status===1){
-                        alert("11111")
                         popup({type:'load',msg:"验证登陆中",delay:1000,callBack:function(){
 	                        popup({type:"success",msg:"登陆成功 正在跳转",delay:1500,callBack:function () {
                                     window.location.href='index.html'
@@ -160,7 +159,6 @@
                         }});
 
                     }else if (data.status===0){
-                        alert("0000")
                         popup({type:'load',msg:"验证登陆中",delay:1000,callBack:function(){
 	                        popup({type:'error',msg:"请检查账号密码",delay:2000,bg:true,clickDomCancel:true});
                         }});

@@ -3,7 +3,7 @@ from . import api
 from gather.utils.exts import db
 from gather.utils.models import Users
 
-@api.route('/test')
+@api.route('/test1')
 def test():
     db.session.add(Users(username = "yangxin", email = "7979@163.com", password = "123"))
     db.session.commit()

@@ -4,13 +4,11 @@
     <list default="true" id="2ed1563c-db77-4085-8119-10d24d390d0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gather/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gather/api_1_0/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/api_1_0/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather/api_1_0/demo.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/api_1_0/demo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/utils/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather/static/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/gather/static/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather/static/html/second.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather/api_1_0/login_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/api_1_0/login_register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather/api_1_0/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/api_1_0/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather/static/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/gather/static/html/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gather/web_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/web_html.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +45,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Gather" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -206,7 +204,8 @@
       <workItem from="1567609398943" duration="1331000" />
       <workItem from="1567665447230" duration="1696000" />
       <workItem from="1567668168012" duration="17071000" />
-      <workItem from="1567738590869" duration="15311000" />
+      <workItem from="1567738590869" duration="21898000" />
+      <workItem from="1567834813753" duration="9007000" />
     </task>
     <servers />
   </component>
@@ -233,7 +232,7 @@
     <SUITE FILE_PATH="coverage/separate$Flask__create_table_py___3_.coverage" NAME="Flask (create_table.py) (3) Coverage Results" MODIFIED="1567745559631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/fenliGather$fenliGather.coverage" NAME="fenliGather Coverage Results" MODIFIED="1567604600537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/separate$Flask__create_table_py___1_.coverage" NAME="Flask (create_table.py) (1) Coverage Results" MODIFIED="1567745114191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/separate$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1567756298374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/separate$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1567844498966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/separate$fenliGather.coverage" NAME="fenliGather Coverage Results" MODIFIED="1567677544785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -4,21 +4,30 @@ from flask import Flask, jsonify, request, render_template, session
 from gather.utils.exts import db
 from gather.utils.models import Users
 
-@api.route('/login', methods=['GET', 'POST'])
-def login():
 
-    # 如果请求是GET请求，则跳转页面到login.html
+@api.route('/users', methods=['GET', 'POST'])
+def users():
     if request.method == 'GET':
         return jsonify({
             'status': 1,
             'message': '登陆成功'
         })
     # 如果请求时POST请求，则跳转页面到登陆判断逻辑
-    elif request.method == 'POST':
+    else:
         return jsonify({
             'status': 0,
-            'message': '成功'
+            'message': '登陆成功'
         })
+
+
+@api.route('/login', methods=['GET', 'POST'])
+def login():
+    # 如果请求是GET请求，则跳转页面到login.html
+    if request.method == 'GET':
+        return render_template("gather.static.html.login.html")
+    # 如果请求时POST请求，则跳转页面到登陆判断逻辑
+    else:
+        return "111"
         # # 获取前端发送来的用户名和密码
         # userid = request.form.get('username')
         # password = request.form.get('password')
