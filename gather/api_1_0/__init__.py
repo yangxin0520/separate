@@ -12,3 +12,6 @@ from . import test
 
 # 导入登陆视图函数
 from . import login_register
+
+# 导入验证码视图函数
+from . import verify_code

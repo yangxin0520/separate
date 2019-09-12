@@ -1,6 +1,5 @@
 from flask import Flask
 from config import config_map
-from flask_sqlalchemy import SQLAlchemy
 from flask_session import Session
 # from flask_wtf import CSRFProtect
 from gather.utils.commons import ReConverter
@@ -38,11 +37,11 @@ def create_app(config_name):
 
 
     # 初始化redis工具
-    # global redis_store
-    # redis_store = redis.StrictRedis(host=config_class.REDIS_HOST, port=config_class.REDIS_PORT)
+    global redis_store
+    redis_store = redis.StrictRedis(host=config_class.REDIS_HOST, port=config_class.REDIS_PORT)
 
-    # # 利用flask-session，将session保存到redis中
-    # Session(app)
+    # 利用flask-session，将session保存到redis中
+    Session(app)
 
     # # 为flask添加csrf防护
     # CSRFProtect(app)

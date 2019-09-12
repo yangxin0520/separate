@@ -3,13 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="2ed1563c-db77-4085-8119-10d24d390d0c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gather/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gather/api_1_0/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/api_1_0/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gather/api_1_0/login_register.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/api_1_0/login_register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather/api_1_0/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/api_1_0/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gather/static/html/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/gather/static/html/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gather/web_html.py" beforeDir="false" afterPath="$PROJECT_DIR$/gather/web_html.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gather/static/html/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/gather/static/html/register.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,8 +21,8 @@
       <list>
         <option value="Flask Main" />
         <option value="CSS File" />
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -53,7 +52,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -91,7 +90,7 @@
       <option name="launchJavascriptDebuger" value="false" />
       <method v="2" />
     </configuration>
-    <configuration name="Flask (create_table.py) (1)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+    <configuration name="Flask (create_table.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
       <option name="flaskDebug" value="true" />
       <module name="fenliGather" />
       <option name="target" value="$PROJECT_DIR$/create_table.py" />
@@ -99,38 +98,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Flask (create_table.py) (2)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
-      <option name="flaskDebug" value="true" />
-      <module name="fenliGather" />
-      <option name="target" value="$PROJECT_DIR$/create_table.py" />
-      <option name="targetType" value="PATH" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Flask (create_table.py) (3)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
-      <module name="fenliGather" />
-      <option name="target" value="$PROJECT_DIR$/create_table.py" />
-      <option name="targetType" value="PATH" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -146,7 +114,38 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (create_table.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <option name="flaskDebug" value="true" />
+      <module name="fenliGather" />
+      <option name="target" value="$PROJECT_DIR$/create_table.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Flask (create_table.py)" type="Python.FlaskServer" temporary="true" nameIsGenerated="true">
+      <module name="fenliGather" />
+      <option name="target" value="$PROJECT_DIR$/create_table.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -174,17 +173,11 @@
       <item itemvalue="Flask server.fenliGather" />
       <item itemvalue="Flask server.Flask (app.py)" />
       <item itemvalue="Flask server.Flask (create_table.py)" />
-      <item itemvalue="Flask server.Flask (create_table.py) (1)" />
-      <item itemvalue="Flask server.Flask (create_table.py) (2)" />
-      <item itemvalue="Flask server.Flask (create_table.py) (3)" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Flask server.Flask (app.py)" />
-        <item itemvalue="Flask server.Flask (create_table.py) (3)" />
         <item itemvalue="Flask server.Flask (create_table.py)" />
-        <item itemvalue="Flask server.Flask (create_table.py) (2)" />
-        <item itemvalue="Flask server.Flask (create_table.py) (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +198,17 @@
       <workItem from="1567665447230" duration="1696000" />
       <workItem from="1567668168012" duration="17071000" />
       <workItem from="1567738590869" duration="21898000" />
-      <workItem from="1567834813753" duration="9007000" />
+      <workItem from="1567834813753" duration="11534000" />
+      <workItem from="1567924841831" duration="2020000" />
+      <workItem from="1567929573657" duration="69000" />
+      <workItem from="1567929658980" duration="4073000" />
+      <workItem from="1567997506987" duration="5877000" />
+      <workItem from="1568026832125" duration="1624000" />
+      <workItem from="1568073944805" duration="5059000" />
+      <workItem from="1568119019850" duration="6686000" />
+      <workItem from="1568173363302" duration="1790000" />
+      <workItem from="1568204235262" duration="3108000" />
+      <workItem from="1568248378834" duration="648000" />
     </task>
     <servers />
   </component>
@@ -232,7 +235,7 @@
     <SUITE FILE_PATH="coverage/separate$Flask__create_table_py___3_.coverage" NAME="Flask (create_table.py) (3) Coverage Results" MODIFIED="1567745559631" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/fenliGather$fenliGather.coverage" NAME="fenliGather Coverage Results" MODIFIED="1567604600537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/separate$Flask__create_table_py___1_.coverage" NAME="Flask (create_table.py) (1) Coverage Results" MODIFIED="1567745114191" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/separate$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1567844498966" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/separate$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1568205825883" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/separate$fenliGather.coverage" NAME="fenliGather Coverage Results" MODIFIED="1567677544785" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

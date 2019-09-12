@@ -69,6 +69,18 @@
 											<label for="signin_form">重复密码</label>
 										    <input type="password" class="form-control" id="password2" placeholder="重复输入密码">
 										</div><!--/.form-group -->
+                                        <div class="form-col">
+											<div class="form-group">
+											    <label for="signin_form">图片验证码</label>
+											    <input type="text" class="form-control" id="signin_form" placeholder="区分大小写">
+											</div><!--/.form-group -->
+										</div><!--/.form-col -->
+										<div class="form-col">
+											<div class="form-group">
+												<label for="signin_form">&nbsp;</label>
+											    <div class="input-group-addon image-code" onclick="generateImageCode();"><img src=""></div>
+											</div><!--/.form-group -->
+										</div><!--/.form-col1 -->
 									</form><!--/form -->
 								</div><!--/.signin-form -->
 							</div><!--/.col -->
@@ -143,7 +155,9 @@
 <!--跳转动画-->
 <script type="text/javascript" src="static/js/login_register/zepto.min.js"></script>
 <script type="text/javascript" src="static/js/login_register/dialog.min.js"></script>
+{#<script type="text/javascript" src="static/js/gather/register.js"></script>#}
 
+<script type="text/javascript" src="static/js/gather/register.js"></script>
 
 <!--Custom JS-->
 <script src="static/js/login_register/custom.js"></script>
@@ -152,7 +166,7 @@
     $(function () {
         $('#register_js').on('click', function () {
             $.ajax({
-                url:"#",
+                url:"/api/V1.0/register",
                 dataType:"json",
                 async:true,
                 data:{
@@ -191,7 +205,6 @@
         })
     })
 </script>
-
     </body>
 
 </html>
